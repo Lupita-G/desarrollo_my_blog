@@ -15,7 +15,7 @@
         <img src="https://e17r5k-datap1.s3-eu-west-1.amazonaws.com/evercorp-empleo-blog/s3fs-public/everis-chicas-que-programan-becas-programas-e-iniciativas-de-apoyo-a-la-formacion.jpg" height="50%" width="50%"  alt="Una chica programando"/>
         <!--Quiero acomodar esta imagen al centro pero desconozco donde poner el atributo-->
         <h3><strong>Aprendiendo a programar</strong></h3>
-        <a href="https://pwa.bedu.org/" target="_blank">Ingresa a la plataforma</a>
+        <a href="https://pwa.bedu.org/" target="_blank" >Ingresa a la plataforma</a>
         <h2><i>Aprendiendo con las listas</i></h2>
         <ol>Necesario
             <li>Descargar editor de texto</li>
@@ -27,16 +27,70 @@
         </ul>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, esse ab consequatur sapiente minima adipisci, dolorem tempora laborum id magni harum sequi voluptatibus, expedita vel temporibus nemo enim quis fugiat.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odit provident aperiam explicabo inventore vitae corrupti magni in quos nobis ea accusantium voluptate harum facilis quas culpa molestias, neque obcaecati!</p>
-        <form>
-            <label>
-                correo electrónico
-                <input type="email">
-            </label>
-            <button type="submit">
-                Try it now &rarr;
-            </button>
+      <!--Formularios del curso de Google-->  
+        <h3> Aprendiendo con los formularios</h3>
+
+        <form id="Formulario">
+            <p>
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name"
+                placeholder="Lupita Guzmán"
+                autofocus
+                autocomplete="/"
+                required />
+            </p>
+            <p>
+                <label for="Email">Email</label>
+                <input type="email"
+                placeholder="ejemplo@gmail.com"
+                autocomplete="/"
+                required />
+            </p>
+            <p>
+                <label for="phone">Telefono</label>
+                <input type="tel" name="phone" id="phone"
+                placeholder="3333333333"
+                pattern="[0-9]{10}"
+                title="Agregar 10 digitos"
+                required
+                />
+            </p>
+            <p>
+                <label for="website">Tu pagina web</label>
+                <input type="url" name="website" id="website"
+                placeholder="http://www.tuweb.com"
+                size="30"
+                />
+            </p>
+            <p>
+                <label for="password"> Contraseña</label>
+                <input type="password" name="passwd" id="passwd"
+                placeholder="aeiou"
+                pattern="[a-z] {5}"
+                title="5 caracteres solo letras"
+                />
+            </p>
+            <p>
+                <label for="Date"> Fecha de registro</label>
+                <input type="date" name="deliverydate" id="deliverydate"
+                min="2020-09-22"
+                />
+        <!--Para el min en este ejemplo es necesario comenzar con el año-->
+            </p>
+            <p>
+                <!--la etiqueta fieldset me ayuda a enmarcar el cuadro y la etiqueta checked deja marcada por defecto la opcion-->
+                <fieldset>
+                    <legend> Selecciona tu genero</legend>
+                    <p><label><input type="radio" name="priority" value="baja" checked>Masculino</label></p>
+                    <p><label><input type="radio" name="priority" value="media">Femenino</label></p>
+                    <p><labe><input type="radio" name="priority" value="alta">Prefiero no mencionar</labe></p>
+                </fieldset>
+            </p>
+                <input type="submit" placeholder="Enviar" />
         </form>
-        
+        <h5>Si quieres repasar este tema </h5>
+        <a href="https://youtu.be/KORp-Qm_XY4" target="-blank"> Cursos de Google</a> 
+
     
 
        
